@@ -32,3 +32,11 @@ select{
     color: white;
     display: inline;
 }
+
+
+@media only screen and (max-width: 450px) {
+    .content{
+    margin: 0 auto;
+    width: 75%;
+    }
+}
