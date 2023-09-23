@@ -10,16 +10,20 @@ function eval(){
     var optionCal = optionCals.value;
 
     if(optionCal === "+"){
-        answer.innerHTML = num1Value + num2Value;
+        total = num1Value + num2Value;
+        answer.innerHTML = parseFloat(total.toFixed(3));
     }else if (optionCal === '-'){
-        answer.innerHTML = num1Value - num2Value;
+        total = num1Value - num2Value
+        answer.innerHTML = parseFloat(total.toFixed(3));
     }else if(optionCal === '*'){
-        answer.innerHTML = num1Value * num2Value;
+        total = num1Value * num2Value;
+        answer.innerHTML = parseFloat(total.toFixed(3));
     }else if(optionCal === '/'){
         if(num2Value === 0){
             answer.innerHTML = 'Cannot divide by Zero'
         }else{
-            answer.innerHTML = num1Value / num2Value;
+            total = num1Value / num2Value;
+            answer.innerHTML = parseFloat(total.toFixed(3));
         }
         
     }
